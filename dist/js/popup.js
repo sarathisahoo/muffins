@@ -1,0 +1,1 @@
+(()=>{function e(e){const t=document.getElementById("container");t.innerHTML="",e.forEach((function(e){const n=document.createElement("div");n.textContent=e,t.appendChild(n)}))}chrome.runtime.onMessage.addListener((function(t,n,o){"updateElement"===t.type&&e(t.content)})),chrome.storage.local.get("updateElement",(function(t){e(t.updateElement)}))})();

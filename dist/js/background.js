@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((function(e,t,n){"updateElement"===e.type&&(console.log(e.content),chrome.storage.local.set({updateElement:e.content}))}));
